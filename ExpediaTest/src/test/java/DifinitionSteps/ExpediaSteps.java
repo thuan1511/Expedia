@@ -35,16 +35,33 @@ public class ExpediaSteps extends TestBase {
 	   act.waitForControlVisible(prop.getProperty("DropdownFlying"));
 	   act.selectItemInDropdownSpecial(prop.getProperty("DropdownFlying"), "li", Expected);
 	   
-	   String text_02 = "Ha Noi";
+	   String text_02 = "Ha";
 	   String Expected_02 = "Hanoi, Vietnam";
 	   act.clickToElement(prop.getProperty("inputFlyingTo"));
 	   act.sendKeyToElement(prop.getProperty("inputFlyingTo"), text_02);
 	   act.waitForControlVisible(prop.getProperty("DropdownFlying"));
 	   act.selectItemInDropdownSpecial(prop.getProperty("DropdownFlying"), "li", Expected_02);
+	   
+	   String value = "22";
+	   String expected_03 = "22";
+	   act.clickToElement(prop.getProperty("inputDeparting"));
+	   act.sendKeyToElement(prop.getProperty("inputDeparting"), value);
+	   act.waitForControlVisible(prop.getProperty("btnCalendar"));
+	   act.selectItemInDropdownSpecial(prop.getProperty("btnCalendar"), "td", expected_03);
+	   
+	   
+	   String value2 = "23";
+	   String expected_04 = "23";
+	   act.clickToElement(prop.getProperty("inputReturn"));
+	   act.sendKeyToElement(prop.getProperty("inputReturn"), value2);
+	   act.waitForControlVisible(prop.getProperty("btn2Calendar"));
+	   act.selectItemInDropdownSpecial(prop.getProperty("btn2Calendar"), "td", expected_04);
 	}
 
 	@When("^Click button Search$")
 	public void click_button_Search() throws Throwable {
+		
+		act.clickToElement(prop.getProperty("btnSearch"));
 	    
 	}
 

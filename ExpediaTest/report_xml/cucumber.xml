@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="45.647116">
-<testcase classname="Testing with Expedia" name="check perform normal" time="45.647116">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="49.814254">
+<testcase classname="Testing with Expedia" name="check perform normal" time="49.814254">
 <system-out><![CDATA[Given Open init browser.....................................................passed
 And Click button Flights....................................................passed
 When Enter information......................................................passed

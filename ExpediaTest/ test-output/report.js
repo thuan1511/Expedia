@@ -60,42 +60,42 @@ formatter.match({
   "location": "ExpediaSteps.open_init_browser()"
 });
 formatter.result({
-  "duration": 41989044658,
+  "duration": 14288058463,
   "status": "passed"
 });
 formatter.match({
   "location": "ExpediaSteps.click_button_Flights()"
 });
 formatter.result({
-  "duration": 309891486,
+  "duration": 5008197947,
   "status": "passed"
 });
 formatter.match({
   "location": "ExpediaSteps.enter_information()"
 });
 formatter.result({
-  "duration": 3348094404,
+  "duration": 8293806227,
   "status": "passed"
 });
 formatter.match({
   "location": "ExpediaSteps.click_button_Search()"
 });
 formatter.result({
-  "duration": 29080,
+  "duration": 22224129667,
   "status": "passed"
 });
 formatter.match({
   "location": "ExpediaSteps.verify_information()"
 });
 formatter.result({
-  "duration": 30447,
+  "duration": 32158,
   "status": "passed"
 });
 formatter.match({
   "location": "ExpediaSteps.locse_browser()"
 });
 formatter.result({
-  "duration": 26342,
+  "duration": 29079,
   "status": "passed"
 });
 });
