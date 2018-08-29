@@ -5,10 +5,10 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import TestBases.TestBase;
 
@@ -22,35 +22,38 @@ public class Actions extends TestBase {
 	private int timeouts = 20;
 
 	// Web Browser
-	public void openUrl(WebDriver driver, String url) {
+	public void openUrl(String url) {
 		driver.get(url);
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 	}
 
-	public String getTitle(WebDriver driver) {
+	public String getTitle() {
 		return driver.getTitle();
 	}
 
-	public String getCurrentUrl(WebDriver driver) {
+	public String getCurrentUrl() {
 		return driver.getCurrentUrl();
 	}
 
-	public String getPageSource(WebDriver driver) {
+	public String getPageSource() {
 		return driver.getPageSource();
 	}
 
-	public void backToPage(WebDriver driver) {
+	public void backToPage() {
 		driver.navigate().back();
 	}
 
-	public void forwardToPage(WebDriver driver) {
+	public void forwardToPage() {
 		driver.navigate().forward();
 	}
 
-	public void refreshPage(WebDriver driver) {
+	public void refreshPage() {
 		driver.navigate().refresh();
 	}
 
+	public void CloseBrowser() {
+		driver.quit();
+	}
 	public void waitForIEBrowser(int Timeouts) {
 		try {
 			Thread.sleep(Timeouts);
@@ -107,10 +110,14 @@ public class Actions extends TestBase {
 	}
 
 
+	public String getAttribute01(String locator) {
+		WebElement element = driver.findElement(By.xpath(locator));
+		String text = element.getAttribute("value").toString();
+		return text;
+	}
 
-
-	public boolean verifyEquals(Object actual, Object expected) {
-		return verifyEquals(actual, expected);
+	public void verifyEquals(String actual, String expected) {
+		Assert.assertEquals(expected, actual);
 	}
 
 }

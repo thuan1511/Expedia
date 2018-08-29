@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="49.814254">
-<testcase classname="Testing with Expedia" name="check perform normal" time="49.814254">
-<system-out><![CDATA[Given Open init browser.....................................................passed
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="71.733744">
+    <testcase classname="Testing with Expedia" name="check perform OutLine Examples" time="71.733744">
+        <system-out>
+            <![CDATA[Given Open init browser.....................................................passed
 And Click button Flights....................................................passed
-When Enter information......................................................passed
+When Enter information "Ho Chi Minh" and "Hanoi"............................passed
 And Click button Search.....................................................passed
 And Verify information......................................................passed
 Then locse browser..........................................................passed
-]]></system-out>
-</testcase>
+]]>
+        </system-out>
+    </testcase>
 </testsuite>

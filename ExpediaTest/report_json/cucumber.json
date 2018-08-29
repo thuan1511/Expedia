@@ -6,22 +6,21 @@
         "value": "#Author: Thuan.Nguyen"
       }
     ],
-    "line": 4,
+    "line": 2,
     "elements": [
       {
-        "line": 8,
-        "name": "check perform normal",
+        "line": 5,
+        "name": "open browser and click search",
         "description": "",
-        "id": "testing-with-expedia;check-perform-normal",
-        "type": "scenario",
-        "keyword": "Scenario",
+        "type": "background",
+        "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 14288058463,
+              "duration": 24948390466,
               "status": "passed"
             },
-            "line": 9,
+            "line": 6,
             "name": "Open init browser",
             "match": {
               "location": "ExpediaSteps.open_init_browser()"
@@ -30,34 +29,58 @@
           },
           {
             "result": {
-              "duration": 5008197947,
+              "duration": 843091021,
               "status": "passed"
             },
-            "line": 10,
+            "line": 7,
             "name": "Click button Flights",
             "match": {
               "location": "ExpediaSteps.click_button_Flights()"
             },
             "keyword": "And "
-          },
+          }
+        ]
+      },
+      {
+        "line": 39,
+        "name": "check perform OutLine Examples",
+        "description": "",
+        "id": "testing-with-expedia;check-perform-outline-examples;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
           {
             "result": {
-              "duration": 8293806227,
+              "duration": 18481868764,
               "status": "passed"
             },
-            "line": 11,
-            "name": "Enter information",
+            "line": 32,
+            "name": "Enter information \"Ho Chi Minh\" and \"Hanoi\"",
             "match": {
-              "location": "ExpediaSteps.enter_information()"
+              "arguments": [
+                {
+                  "val": "Ho Chi Minh",
+                  "offset": 19
+                },
+                {
+                  "val": "Hanoi",
+                  "offset": 37
+                }
+              ],
+              "location": "ExpediaSteps.enter_information_and(String,String)"
             },
+            "matchedColumns": [
+              0,
+              1
+            ],
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 22224129667,
+              "duration": 25715810742,
               "status": "passed"
             },
-            "line": 12,
+            "line": 33,
             "name": "Click button Search",
             "match": {
               "location": "ExpediaSteps.click_button_Search()"
@@ -66,10 +89,10 @@
           },
           {
             "result": {
-              "duration": 32158,
+              "duration": 803118599,
               "status": "passed"
             },
-            "line": 13,
+            "line": 34,
             "name": "Verify information",
             "match": {
               "location": "ExpediaSteps.verify_information()"
@@ -78,10 +101,10 @@
           },
           {
             "result": {
-              "duration": 29079,
+              "duration": 941464143,
               "status": "passed"
             },
-            "line": 14,
+            "line": 35,
             "name": "locse browser",
             "match": {
               "location": "ExpediaSteps.locse_browser()"
@@ -91,8 +114,8 @@
         ],
         "tags": [
           {
-            "line": 7,
-            "name": "@tag1"
+            "line": 30,
+            "name": "@tag3"
           }
         ]
       }

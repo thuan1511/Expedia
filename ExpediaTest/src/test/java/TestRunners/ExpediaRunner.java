@@ -10,6 +10,7 @@ import cucumber.api.junit.Cucumber;
 		features = ".\\src\\test\\java\\Features",
 		glue = {"DifinitionSteps"},
 		format = {"pretty", "html: test-output", "json:report_json/cucumber.json", "junit:report_xml/cucumber.xml"},
+		tags= {"@tag3"},
 		dryRun = false,
 		monochrome = true,
 		strict = true
