@@ -1,0 +1,106 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#Author: Thuan.Nguyen"
+      }
+    ],
+    "line": 4,
+    "elements": [
+      {
+        "line": 8,
+        "name": "check perform normal",
+        "description": "",
+        "id": "testing-with-expedia;check-perform-normal",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 41989044658,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Open init browser",
+            "match": {
+              "location": "ExpediaSteps.open_init_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 309891486,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Click button Flights",
+            "match": {
+              "location": "ExpediaSteps.click_button_Flights()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3348094404,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Enter information",
+            "match": {
+              "location": "ExpediaSteps.enter_information()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 29080,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Click button Search",
+            "match": {
+              "location": "ExpediaSteps.click_button_Search()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 30447,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Verify information",
+            "match": {
+              "location": "ExpediaSteps.verify_information()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 26342,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "locse browser",
+            "match": {
+              "location": "ExpediaSteps.locse_browser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 7,
+            "name": "@tag1"
+          }
+        ]
+      }
+    ],
+    "name": "Testing with Expedia",
+    "description": "I want to use this template for my feature file",
+    "id": "testing-with-expedia",
+    "keyword": "Feature",
+    "uri": "Application.feature"
+  }
+]
